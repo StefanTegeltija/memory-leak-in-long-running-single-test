@@ -1,0 +1,23 @@
+{
+  "name": "memory-leak-example",
+  "version": "1.0.0",
+  "description": "This is reproducible example of memory leak in Cypress",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "run:dev": "CYPRESS_BASE_URL=https://casinogrounds.com/ cypress open --browser chrome --e2e --env name=cypress.dev"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/e2e/step_definitions"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "Stefan Tegeltija",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^12.17.4",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "prettier": "^2.8.4"
+  }
+}
